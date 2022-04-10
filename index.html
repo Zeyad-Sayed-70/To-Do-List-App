@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./CSS/Normalize.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body class="bg-light">
+    <section>
+        <div class="container">
+            <div class="">
+                <header class="fs-2 text-center py-3">TO-DO LIST</header>
+                <form class="text-center d-flex">
+                    <div class="input-group ms-auto">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+                                <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                            </svg>
+                        </span>
+                        <input type="text" id="ToDoText" class="form-control" placeholder="Add To-Do" aria-label="Add To-Do"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <button class="addBtn btn btn-primary me-auto">Add</button>
+                </form>
+                <div class="filter flex-wrap flex-md-nowrap text-center py-4 d-flex align-items-center justify-content-center gap-3">
+                    <label for="filter">Search By: </label>
+                    <select id="filter" class="form-select">
+                        <option value="text">
+                            Text
+                        </option>
+                        <option value="date">
+                            Date
+                        </option>
+                    </select>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </span>
+                        <input type="text" id="search" class="form-control" placeholder="Search here" aria-label="search"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="list col-12  col-lg-8 p-0 m-0 me-auto ms-auto mt-5 gap-3"></ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="./Javascript/bootstrap.bundle.min.js"></script>
+    <script src="./Javascript/mainJs.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.input-group {
+    width: auto;
+}
+.form-select {
+    width: auto;
+}
+form > div {
+    width: 40% !important;
+}
+@media (max-width: 767px) {
+    form > div {
+        width: 100% !important;
+    }
+}
+.bg-gray {
+    background-color: rgba(204, 204, 204, 0.291) !important;
+}
+.addBtn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#ToDoText {
+    margin-right: -1px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
